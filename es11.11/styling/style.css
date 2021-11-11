@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+  --main_color: #ab135a;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: rgb(196, 163, 196);
+ 
+}
+
+h4, h2 {
+  margin: 20px 0 0;
+  padding: 0;
+  color: var(--main_color);
+  text-align: center;
+}
+
+img {
+  width: 90px;
+}
+
+strong {
+  font-weight:lighter;
+}
+
+.cart {
+  text-align: right;
+  width: 80px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.wrapper__titles {
+  display:table-row-group;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper__titles h2 {
+  font-size: 40px;
+}
+
+.wrapper__titles h4 {
+  font-size: 25px;
+}
+
+.wrapper__products {
+  margin: 75px 40px;
+  height: 650px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  z-index: 20;
+  overflow-x: hidden;
+  
+  
+}
+
+.product {
+  display: flex;
+ flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7.5px;
+  padding: 10px;
+
+  min-width: 150px;
+
+  border: 2px dotted rgb(190, 142, 21);
+  border-radius: 15px;
+
+  opacity: 0.78;
+  cursor:pointer;
+  transition: all 0.35s;
+  background-color: white;
+}
+
+.product:hover {
+  transform: scale(0.9);
+  border: 2px solid var(--main_color);
+  z-index: 20;
+}
+
+.product:active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product p {
+  align-self: flex-start;
+  
+}
